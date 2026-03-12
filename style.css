@@ -110,6 +110,10 @@
   margin-top: 1.2rem;
   justify-content: center;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --color-light-blue: #6EC1E4;
   --color-black: #181A1B;
@@ -175,16 +179,16 @@ h2, h3 {
 }
 
 button, .btn {
-  background: linear-gradient(90deg, var(--color-light-blue), var(--color-light-purple));
-  color: var(--color-black);
-  border: none;
-  border-radius: 8px;
-  padding: 0.7em 1.6em;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(24,26,27,0.07);
-  transition: background 0.2s, color 0.2s;
+    background: linear-gradient(90deg, var(--color-light-blue), var(--color-light-purple));
+    color: var(--color-black);
+    border: none;
+    border-radius: 8px;
+    padding: 0.7em 1.6em;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(24,26,27,0.07);
+    transition: background 0.2s, color 0.2s, transform 0.15s, box-shadow 0.15s;
 }
 
 button:hover, .btn:hover {
